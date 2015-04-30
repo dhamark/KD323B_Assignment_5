@@ -14,9 +14,6 @@ import static se.k3.antonochisak.kd323bassignment5.helpers.StaticHelpers.TRAKT_A
 import static se.k3.antonochisak.kd323bassignment5.helpers.StaticHelpers.TRAKT_CONTENT_TYPE;
 
 
-/**
- * Created by isak on 2015-04-24.
- */
 
 public interface ApiService {
 
@@ -27,6 +24,6 @@ public interface ApiService {
     void getPopular(@Query("extended") String extended, Callback<List<ApiResponse>> callback);
 
     @Headers({TRAKT_CONTENT_TYPE, TRAKT_API_KEY, TRAKT_API_VERSION})
-    @GET("PUT_URL_HERE") // unfinished url, go to http://docs.trakt.apiary.io/ and find the trending-url
+    @GET("/movies/trending" + pagination)
     void getTrending(@Query("extended") String extended, Callback<List<RootApiResponse>> callback);
 }

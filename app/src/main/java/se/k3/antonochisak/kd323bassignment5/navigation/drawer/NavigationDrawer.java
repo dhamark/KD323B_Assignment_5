@@ -20,6 +20,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import se.k3.antonochisak.kd323bassignment5.R;
 import se.k3.antonochisak.kd323bassignment5.fragments.PopularMoviesFragment;
+import se.k3.antonochisak.kd323bassignment5.fragments.myFragment;
 import se.k3.antonochisak.kd323bassignment5.helpers.StaticHelpers;
 
 /**
@@ -103,8 +104,14 @@ public class NavigationDrawer implements AdapterView.OnItemClickListener {
             case 0:
                 fragment = new PopularMoviesFragment();
                 break;
+
+            case 1:
+                fragment = new myFragment();
+                break;
             default:
                 break;
+
+
         }
 
         // only replace the current fragment if the chosen fragment isn't already visible

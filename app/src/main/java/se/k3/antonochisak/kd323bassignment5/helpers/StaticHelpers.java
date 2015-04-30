@@ -14,7 +14,7 @@ import android.view.WindowManager;
  */
 public class StaticHelpers {
 
-    public static final String FIREBASE_CHILD = "top_movies"; // Change this to create a new "room" to view on the desktop
+    public static final String FIREBASE_CHILD = "David"; // Change this to create a new "room" to view on the desktop
 
     public static final String API_URL = "https://api-v2launch.trakt.tv";
     public static final String FIREBASE_URL = "https://klara.firebaseio.com/";
